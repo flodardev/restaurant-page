@@ -7,6 +7,7 @@ export default {
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
+    publicPath: "/", // Tells Webpack to start paths from the root
     clean: true,
   },
   devtool: "eval-source-map",
@@ -18,4 +19,16 @@ export default {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
 };
