@@ -1,8 +1,8 @@
-export { aboutPage };
+export { aboutSection };
 
-const aboutPage = (() => {
-  const mainContainer = document.querySelector("#main-container");
-  const aboutSection = document.createElement("div");
-
-  return;
-})();
+const aboutSection = () => {
+  const text = "This is the about page";
+  const aboutDiv = document.createElement("div");
+  aboutDiv.textContent = text;
+  return aboutDiv;
+};
