@@ -1,0 +1,27 @@
+:root {
+  --foodcard-bg-color: #740a03;
+}
+
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+
+  background-color: var(--header-bg-color);
+}
+
+.food-card {
+  height: 300px;
+  width: 250px;
+  display: grid;
+
+  background-color: var(--foodcard-bg-color);
+  color: var(--header-font-color);
+
+  border-radius: 10px;
+
+  div {
+    padding: 0.5rem;
+  }
+}
