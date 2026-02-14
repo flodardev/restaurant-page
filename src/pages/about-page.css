@@ -1,0 +1,35 @@
+.about-section {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.block {
+  height: 100dvh;
+  width: 100%;
+}
+
+.block-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: var(--header-bg-color);
+  color: var(--header-font-color);
+
+  h2 {
+    font-family: "Dancing-Script";
+    text-align: center;
+  }
+
+  img {
+    place-self: center;
+    width: 100%;
+  }
+
+  div {
+    place-self: center;
+  }
+
+  p {
+    margin: 1rem;
+  }
+}
