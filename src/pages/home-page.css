@@ -8,9 +8,18 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.cards {
+  height: 100dvh;
+  width: 100%;
+}
+
 .headline-card {
   display: grid;
   position: relative;
+
+  img {
+    height: 100%;
+  }
 }
 
 .title-card {
@@ -20,6 +29,7 @@
 
   background-color: rgba(255, 255, 255, 1);
   color: var(--header-bg-color);
+  font-size: 2rem;
 
   position: absolute;
   top: 50%;
@@ -29,4 +39,38 @@
   font-family: "Dancing-Script";
   border-radius: 10px;
   padding: 1rem;
+}
+
+.story-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  color: var(--header-font-color);
+  font-family: "Dancing-Script";
+  font-size: 2rem;
+  img {
+    border-radius: 10px;
+  }
+
+  p {
+    padding: 1rem;
+  }
+}
+
+.operating-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  color: var(--header-font-color);
+
+  img {
+    height: 100%;
+  }
+
+  li {
+    list-style-type: none;
+  }
 }
