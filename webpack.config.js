@@ -7,7 +7,6 @@ export default {
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
-    publicPath: "/", // Tells Webpack to start paths from the root
     clean: true,
   },
   devtool: "eval-source-map",
