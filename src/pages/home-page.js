@@ -61,7 +61,7 @@ const operatingSection = () => {
   operatingImg.src = operatingImage;
 
   const operatingHours = document.createElement("div");
-  const homeOpHours = document.createElement("p");
+  const homeOpHours = document.createElement("h3");
   homeOpHours.textContent = "Operating Hours";
   const hourList = document.createElement("ul");
 
